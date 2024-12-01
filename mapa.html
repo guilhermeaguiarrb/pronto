@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa - Help Connect</title>
+    <!-- Incluindo o Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .header {
+            background-color: #5a2d82;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #map {
+            height: 80vh;
+            width: 100%;
+        }
+        .info {
+            padding: 20px;
+            background-color: #fff;
+            color: #5a2d82;
+        }
+        .info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .info li:hover {
+            background-color: #e8e3f3;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Mapa - Help Connect</h1>
+    </header>
+    <main>
+        <div id="map"></div>
+        <div class="info">
+            <h2>Pontos Turísticos</h2>
+            <ul id="locations-list">
+                <!-- Lista será populada dinamicamente -->
+            </ul>
+        </div>
+    </main>
+    <!-- Incluindo o Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
